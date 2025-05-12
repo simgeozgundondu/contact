@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        padding: 20px;
+      }
+
+      .container {
+        text-align: center;
+        background-color: white;
+        padding: 40px 30px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+        animation: fadeIn 0.5s ease-in;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      h1 {
+        color: #2c3e50;
+        margin-bottom: 20px;
+        font-size: 2.2rem;
+      }
+
+      p {
+        color: #666;
+        margin-bottom: 30px;
+        font-size: 1.1rem;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 30px;
+        margin: 10px;
+        font-size: 1rem;
+        cursor: pointer;
+        border: none;
+        border-radius: 12px;
+        background-color: #0f98e1;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        width: 100%;
+        max-width: 250px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .btn-email {
+        background-color: #d81d0d;
+      }
+
+      .btn i {
+        margin-right: 10px;
+        font-size: 1.2rem;
+      }
+
+      .social-icons {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          padding: 30px 20px;
+        }
+
+        h1 {
+          font-size: 1.8rem;
+        }
+
+        .btn {
+          padding: 12px 25px;
+          font-size: 0.95rem;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Contact Me</h1>
+      <p>Let's connect and start a conversation</p>
+      <button
+        class="btn"
+        onclick="window.location.href='https://www.linkedin.com/in/simge-ozgundondu/'"
+      >
+        <i class="fab fa-linkedin"></i>
+        LinkedIn Profile
+      </button>
+      <button
+        class="btn btn-email"
+        onclick="window.location.href='mailto:simgeozgndndu@gmail.com'"
+      >
+        <i class="fas fa-envelope"></i>
+        Send Email
+      </button>
+    </div>
+  </body>
+</html>
